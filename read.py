@@ -19,3 +19,9 @@ for i in data:
 	if len(i) < 100:
 		new.append(i)
 print('共几笔小于100字:', len(new))
+
+prize = []
+for i in data:
+	if 'good' in i:
+		prize.append(i)
+print('共有: ', len(prize), '笔留言有good出现')
