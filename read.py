@@ -13,3 +13,9 @@ for i in data:
 	s = s + len(i)
 	avg = s / len(data)
 print('avg=', avg)
+
+new = []
+for i in data:
+	if len(i) < 100:
+		new.append(i)
+print('共几笔小于100字:', len(new))
